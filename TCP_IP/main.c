@@ -1,15 +1,11 @@
-//
-//  main.c
-//  TCP_IP
-//
-//  Created by SummerFlower on 05/09/2019.
-//  Copyright © 2019 SummerFlower. All rights reserved.
-//
-
 #include <stdio.h>
+#include <stdlib.h>
+#include <String.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <sys/epoll.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
+
+void error_handling(char *message);
+
